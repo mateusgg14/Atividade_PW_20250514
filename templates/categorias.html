@@ -16,26 +16,21 @@
         </div>
     </header>
     <main class="container my-3">
-        <h1>produtos</h1>
+        <h1>categorias</h1>
         <hr>
         <table class="table table-striped">
             <thead>
                 <tr>
                     <th>Id</th>
                     <th>Nome</th>
-                    <th>CPF</th>
-                    <th>Email</th>
-                    <th>Telefone</th>
                 </tr>
             </thead>
             <tbody> 
-                {% for cliente in produtos %}
+                {% for c in categorias %}
                 <tr>
-                    <td>{{cliente.id}}</td>
-                    <td>{{cliente.nome}}</td>
-                    <td>{{cliente.descricao}}</td>
-                    <td>{{cliente.preco}}</td>
-                    <td>{{cliente.quantidade}}</td>
+                    <td>{{c.id}}</td>
+                    <td>{{c.nome}}</td>
+
                 </tr>
                 {% endfor %}
             </tbody>
